@@ -13,11 +13,11 @@ app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname,'../public/index.html'));
 });
 
-app.get('/employees', (req, res) => {
+app.get('/api/employees', (req, res) => {
 	res.send(employees);
 });
 
-app.get('/employers', (req, res) => {
+app.get('/api/employers', (req, res) => {
 	res.send(employers);
 });
 
