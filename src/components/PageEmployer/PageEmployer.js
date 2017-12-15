@@ -1,31 +1,50 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ModalSwipeEmployer from '../ModalSwipeEmployer/ModalSwipeEmployer';
 import Dropdown from '../Dropdown/Dropdown';
 import Matches from '../Matches/Matches';
 import Connections from '../Connections/Connections';
 import ProfileEmployer from '../ProfileEmployer/ProfileEmployer';
+import "./PageEmployer.css"
 
 
 
+class PageEmployer extends Component {
+	state = {}
 
-function PageEmployer() {
-	return (
-	<div className="container">
-		<br />
-		<div className='row'>
-			<div className="col-md-3">
-				<ProfileEmployer />
+	openNav = () => {
+		document.getElementById("mySidenav").style.width = "450px";
+	}
+
+	closeNav = () => {
+		document.getElementById("mySidenav").style.width = "0px";
+	}
+
+	render () {
+		return (
+			<div>
+				<div id="mySidenav" className="sidenav">
+				  <a className="closebtn" onClick={() => this.closeNav()}>&times;</a>
+				  <ProfileEmployer />
+				</div>
+
+				<span onClick={() => this.openNav()}>PROFILE</span>
+
+				<div className="container" id="main" style={{height: "auto"}}>
+					<div className="row">
+						<Dropdown />
+					</div>
+					<div className='row'>
+						<Matches />
+					</div>
+					<br />
+					<div className="row">
+						<Connections />
+					</div>
+					<ModalSwipeEmployer />
+				</div>
 			</div>
-			<div className="col-md-9">
-				<Dropdown />
-				<Matches />
-				<Connections />
-			</div>
-		</div>
-		<ModalSwipeEmployer />
-		<br />
-	</div>
-	)
+		)
+	}
 }
 
 
