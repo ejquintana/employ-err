@@ -16,7 +16,6 @@ class App extends Component {
 					<Route exact path="/" component={PageHome} />
 					<Route exact path="/employee" component={PageEmployee} />
 					<Route path="/employer" component={PageEmployer} />
-					<Footer />
 				</div>
 			</Router>
 		);
