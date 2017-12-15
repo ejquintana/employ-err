@@ -3,15 +3,18 @@ import React from 'react';
 import ButtonEmployeeLogin from '../ButtonEmployeeLogin/ButtonEmployeeLogin';
 import ButtonEmployerLogin from '../ButtonEmployerLogin/ButtonEmployerLogin';
 import ButtonLogout from '../ButtonLogout/ButtonLogout';
+import "./Navigator.css";
 
 function Navigator() {
 
 	return (
-		<nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+		<nav className="navbar navbar navbar-dark bg-dark">
 	  		<a className="navbar-brand" href="/">Employ{'{err}'}</a>
-			<ButtonEmployeeLogin />
-			<ButtonEmployerLogin />
-			<ButtonLogout />
+	  		<div className="justify-content-end">
+				<ButtonEmployeeLogin />
+				<ButtonEmployerLogin />
+				<ButtonLogout />
+			</div>
 		</nav>
 	)
 }
