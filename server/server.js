@@ -9,16 +9,16 @@ const employers = require('./employers.js');
 app.use(express.static('public'));
 
 
-app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname,'../public/index.html'));
-});
-
 app.get('/api/employees', (req, res) => {
 	res.send(employees);
 });
 
 app.get('/api/employers', (req, res) => {
 	res.send(employers);
+});
+
+app.get('/*', (req, res) => {
+	res.sendFile(path.join(__dirname,'../public/index.html'));
 });
 
 app.listen(PORT, () => console.log(`Employ{err} app server listening on port ${PORT}`));
