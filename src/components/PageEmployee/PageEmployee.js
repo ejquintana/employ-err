@@ -8,7 +8,15 @@ import "./PageEmployee.css"
 
 
 class PageEmployee extends Component {
-	state = {}
+	state = {
+		pending: ""
+	}
+
+	componentDidMount() {
+		fetch('/api/employees')
+		.then(res => console.log(res))
+	}
+
 
 	openNav = () => {
 		document.getElementById("mySidenav").style.width = "450px";
