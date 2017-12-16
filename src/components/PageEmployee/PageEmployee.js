@@ -40,11 +40,11 @@ class PageEmployee extends Component {
 
 				<div className="container" id="main" style={{height: "auto", paddingTop: "75px"}}>
 					<div className='row'>
-						<Matches data={this.state.matches} modal='#employeeModal'/>
+						<Matches data={this.state.matches} toggle="modal" href='#employeeModal'/>
 					</div>
 					<br />
 					<div className="row">
-						<Connections data={this.state.matches} modal='#employeeModal'/>
+						<Connections data={this.state.matches} toggle="" href="mailto:"/>
 					</div>
 					<ModalSwipeEmployee />
 				</div>
