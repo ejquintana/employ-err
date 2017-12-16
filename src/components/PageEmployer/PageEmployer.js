@@ -4,6 +4,8 @@ import Dropdown from '../Dropdown/Dropdown';
 import Matches from '../Matches/Matches';
 import Connections from '../Connections/Connections';
 import ProfileEmployer from '../ProfileEmployer/ProfileEmployer';
+import Navigator from '../Navigator/Navigator';
+import Footer from '../Footer/Footer';
 import "./PageEmployer.css"
 
 
@@ -22,6 +24,7 @@ class PageEmployer extends Component {
 	render () {
 		return (
 			<div>
+				<Navigator />
 				<div id="mySidenav" className="sidenav">
 				  <a className="closebtn" onClick={() => this.closeNav()}>&times;</a>
 				  <ProfileEmployer />
@@ -42,6 +45,7 @@ class PageEmployer extends Component {
 					</div>
 					<ModalSwipeEmployer />
 				</div>
+				<Footer />
 			</div>
 		)
 	}

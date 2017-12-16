@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Navigator from './components/Navigator/Navigator';
-import Footer from './components/Footer/Footer';
 import PageHome from './components/PageHome/PageHome';
 import PageEmployee from './components/PageEmployee/PageEmployee';
 import PageEmployer from './components/PageEmployer/PageEmployer';
@@ -12,7 +10,6 @@ class App extends Component {
 		return (
 			<Router>
 				<div>
-					<Navigator />
 					<Route exact path="/" component={PageHome} />
 					<Route exact path="/employee" component={PageEmployee} />
 					<Route path="/employer" component={PageEmployer} />

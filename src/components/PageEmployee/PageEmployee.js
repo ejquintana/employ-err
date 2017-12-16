@@ -3,6 +3,8 @@ import ModalSwipeEmployee from '../ModalSwipeEmployee/ModalSwipeEmployee';
 import Matches from '../Matches/Matches';
 import Connections from '../Connections/Connections';
 import ProfileEmployee from '../ProfileEmployee/ProfileEmployee';
+import Navigator from '../Navigator/Navigator';
+import Footer from '../Footer/Footer';
 import "./PageEmployee.css"
 
 
@@ -17,7 +19,6 @@ class PageEmployee extends Component {
 		.then(res => console.log(res))
 	}
 
-
 	openNav = () => {
 		document.getElementById("mySidenav").style.width = "450px";
 	}
@@ -29,6 +30,7 @@ class PageEmployee extends Component {
 	render () {
 		return (
 			<div>
+				<Navigator />
 				<div id="mySidenav" className="sidenav">
 				  <a className="closebtn" onClick={() => this.closeNav()}>&times;</a>
 				  <ProfileEmployee />
@@ -46,6 +48,7 @@ class PageEmployee extends Component {
 					</div>
 					<ModalSwipeEmployee />
 				</div>
+				<Footer />
 			</div>
 		)
 	}
