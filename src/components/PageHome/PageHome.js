@@ -23,8 +23,8 @@ class PageHome extends React.Component{
               <div className="col-lg-8 mx-auto">
                 <p className="text-faded mb-5">Easily find and match to interested candidates</p>
                 <a className="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-                <hr/>
-                <a className="btn btn-light btn-xl" href="/">Create Profile</a>          
+                {/*<hr/>
+                <a className="btn btn-light btn-xl" href="/">Get Swiping</a>*/}        
                </div>
             </div>
           </div>
@@ -35,7 +35,7 @@ class PageHome extends React.Component{
               <div className="col-lg-8 mx-auto text-center">
                 <h2 className="section-heading text-white">Swipe right to like someone or swipe left to pass.</h2>
                 <hr className="light my-4" />
-                <p className="text-faded mb-4">"I was tired of the traditional and often painful methods of trying to find the right talent. The ability to define skill criteria and swipe through candidates quickly has made my job so much easier and increased our hiring yield by at least 40%"</p>
+                <p className="text-faded mb-4">"I was tired of the traditional and often painful methods of trying to find the right talent. The ability to define skill criteria and swipe through candidates based off of initial impression has made my job so much easier and increased our hiring yield by at least 40%"</p>
                 <a className="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
               </div>
             </div>

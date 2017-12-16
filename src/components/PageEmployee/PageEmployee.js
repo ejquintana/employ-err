@@ -39,14 +39,17 @@ class PageEmployee extends Component {
 				</div>
 
 				<div className="container" id="main" style={{height: "auto", paddingTop: "75px"}}>
+					<br />
 					<div className='row'>
-						<Matches data={this.state.matches} toggle="modal" href='#employeeModal'/>
+						<div className="col-md-6">
+							<Matches data={this.state.matches} toggle="modal" href='#employeeModal'/>
+						</div>
+						<div className="col-md-6">
+							<Connections data={this.state.matches} toggle="" href="mailto:"/>
+						</div>
 					</div>
 					<br />
-					<div className="row">
-						<Connections data={this.state.matches} toggle="" href="mailto:"/>
-					</div>
-					<ModalSwipeEmployee />
+					<ModalSwipeEmployee data={this.state.matches}/>
 				</div>
 				<Footer />
 			</div>
