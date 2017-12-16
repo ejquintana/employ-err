@@ -19,7 +19,8 @@ class Matches extends Component {
 				  			displayName={card.displayName} 
 				  			image={card.image}
 				  			title={card.title}
-				  			modal={this.props.modal}/>))}
+				  			href={this.props.href}
+				  			toggle={this.props.toggle}/>))}
 				</div>
 			  </div>
 			</div>

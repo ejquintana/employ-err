@@ -49,11 +49,11 @@ class PageEmployer extends Component {
 						</div>
 					</div>
 					<div className='row'>
-						<Matches data={this.state.matches} modal='#employerModal'/>
+						<Matches data={this.state.matches} toggle="modal" href='#employerModal'/>
 					</div>
 					<br />
 					<div className="row">
-						<Connections data={this.state.matches} modal='#employerModal'/>
+						<Connections data={this.state.matches} toggle="" href="mailto:"/>
 					</div>
 					<ModalSwipeEmployer data={this.state.matches}/>
 				</div>

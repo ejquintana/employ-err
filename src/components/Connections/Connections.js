@@ -18,7 +18,9 @@ class Connections extends Component {
 				  			displayName={card.displayName} 
 				  			image={card.image}
 				  			title={card.title}
-				  			modal={this.props.modal}/>))}
+				  			email={card.email}
+				  			toggle={this.props.toggle}
+				  			href={this.props.href}/>))}
 				</div>
 			  </div>
 			</div>
