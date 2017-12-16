@@ -1,39 +1,16 @@
 import React from 'react';
+import Navigator from '../Navigator/Navigator';
+import Footer from '../Footer/Footer';
 import '../../css/creative.min.css';
 import '../../vendor/magnific-popup/magnific-popup.css';
 import '../../css/style.css';
 
 
-{/*import './HomePage.css';*/}
-
-
 class PageHome extends React.Component{
   render(){
-{/*  var NewComponent = React.createClass({
-  render: function() {*/}
     return (
       <div>
-        {/* Navigation
-        <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-          <div className="container">
-            <div className="collapse navbar-collapse" id="navbarResponsive">
-              <ul className="navbar-nav ml-auto">
-                <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#about">About</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#services">Services</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>*/}
+        <Navigator />
         <header className="masthead text-center text-white d-flex">
           <div className="container my-auto">
             <div className="row">
@@ -47,7 +24,7 @@ class PageHome extends React.Component{
                 <p className="text-faded mb-5">Easily find and match to interested candidates</p>
                 <a className="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
                 <hr/>
-                <a className="btn btn-light btn-xl" href="#">Create Profile</a>          
+                <a className="btn btn-light btn-xl" href="/">Create Profile</a>          
                </div>
             </div>
           </div>
@@ -94,7 +71,7 @@ class PageHome extends React.Component{
                    <h3 className="mb-4">Make a Connection</h3> 
                    <p className="text-grey mb-3">Get a jump on the competition. Create your profile and get started.</p>
                    <br/>
-                   <a className="btn btn-primary btn-xl" href="#">Create Profile</a>
+                   <a className="btn btn-primary btn-xl" href="/">Create Profile</a>
                  </div> 
                 </div>
               <div className="col-lg-4 col-md-6 text-center">
@@ -107,6 +84,7 @@ class PageHome extends React.Component{
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     );
   }
