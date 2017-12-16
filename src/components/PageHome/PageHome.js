@@ -10,7 +10,7 @@ class PageHome extends React.Component{
   render(){
     return (
       <div>
-        <Navigator />
+        <Navigator home='none'/>
         <header className="masthead text-center text-white d-flex">
           <div className="container my-auto">
             <div className="row">

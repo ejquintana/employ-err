@@ -24,15 +24,13 @@ class PageEmployer extends Component {
 	render () {
 		return (
 			<div>
-				<Navigator />
-				<div id="mySidenav" className="sidenav">
+				<Navigator openNav={this.openNav} none='none'/>
+				<div id="mySidenav" className="sidenav" style={{zIndex: "2000"}}>
 				  <a className="closebtn" onClick={() => this.closeNav()}>&times;</a>
 				  <ProfileEmployer />
 				</div>
 
-				<span onClick={() => this.openNav()}>PROFILE</span>
-
-				<div className="container" id="main" style={{height: "auto"}}>
+				<div className="container" id="main" style={{height: "auto", paddingTop: "75px"}}>
 					<div className="row">
 						<Dropdown />
 					</div>
