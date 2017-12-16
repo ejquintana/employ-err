@@ -6,7 +6,7 @@ import '../../vendor/magnific-popup/magnific-popup.css';
 function Navigator() {
 	return (
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark scrolling-navbar">
-          <a className="navbar-brand" style={{color:"#EE5F46" }} href="#"><strong>Employ{'{err}'}</strong></a>
+          <a className="navbar-brand" style={{color:"#EE5F46" }} href="/"><strong>Employ{'{err}'}</strong></a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>
