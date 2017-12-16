@@ -57,7 +57,7 @@ class PageEmployer extends Component {
 					</div>
 					<ModalSwipeEmployer data={this.state.matches}/>
 				</div>
-				{/*<Footer />*/}
+				<Footer />
 			</div>
 		)
 	}
