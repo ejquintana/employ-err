@@ -18,7 +18,7 @@ class PageEmployer extends Component {
 	}
 
 	componentDidMount() {
-		axios('/api/employees')
+		axios('/api/employers')
 		.then(res => this.setState({matches: res.data}))
 	}
 
@@ -55,7 +55,7 @@ class PageEmployer extends Component {
 					<div className="row">
 						<Connections data={this.state.matches} modal='#employerModal'/>
 					</div>
-					<ModalSwipeEmployer />
+					<ModalSwipeEmployer data={this.state.matches}/>
 				</div>
 				{/*<Footer />*/}
 			</div>
