@@ -9,7 +9,7 @@ function Footer() {
 				<span>Swipe Now</span>
 			</h2>
 			<nav className="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-			<a className="navbar-brand" href="/">Hire for Looks not Skills!</a>
+			<a className="navbar-brand" href="#">Hire for Looks not Skills!</a>
 			</nav>
 		</div>
 	)
