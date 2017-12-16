@@ -17,7 +17,7 @@ class PageEmployee extends Component {
 	}
 
 	componentDidMount() {
-		axios('/api/employees')
+		axios('/api/employers')
 		.then(res => this.setState({matches: res.data}))
 	}
 
