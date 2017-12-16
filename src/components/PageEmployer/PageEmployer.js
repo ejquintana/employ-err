@@ -41,7 +41,12 @@ class PageEmployer extends Component {
 
 				<div className="container" id="main" style={{height: "auto", paddingTop: "75px"}}>
 					<div className="row">
-						<Dropdown />
+						<div className="col-md-8 text-center" style={{paddingTop: "5px"}}>
+							<Dropdown />
+						</div>
+						<div className="col-md-4 text-center" style={{marginBottom: '10px'}}>
+							<button className="btn searchButt" data-toggle="modal" href='#employerModal'>SEARCH</button>
+						</div>
 					</div>
 					<div className='row'>
 						<Matches data={this.state.matches} modal='#employerModal'/>

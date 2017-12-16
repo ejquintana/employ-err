@@ -36,6 +36,12 @@
     margin-left: 50px;
 }
 
+.searchButt {
+    background-color: #EE5F46;
+    cursor: pointer;
+    color: white;
+}
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
