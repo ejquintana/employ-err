@@ -7,11 +7,20 @@ import ProfileEmployer from '../ProfileEmployer/ProfileEmployer';
 import Navigator from '../Navigator/Navigator';
 import Footer from '../Footer/Footer';
 import "./PageEmployer.css"
+import axios from 'axios';
 
 
 
 class PageEmployer extends Component {
-	state = {}
+	state = {
+		matches: [],
+		connections: []
+	}
+
+	componentDidMount() {
+		axios('/api/employees')
+		.then(res => this.setState({matches: res.data}))
+	}
 
 	openNav = () => {
 		document.getElementById("mySidenav").style.width = "450px";
@@ -35,15 +44,15 @@ class PageEmployer extends Component {
 						<Dropdown />
 					</div>
 					<div className='row'>
-						<Matches />
+						<Matches data={this.state.matches} modal='#employerModal'/>
 					</div>
 					<br />
 					<div className="row">
-						<Connections />
+						<Connections data={this.state.matches} modal='#employerModal'/>
 					</div>
 					<ModalSwipeEmployer />
 				</div>
-				<Footer />
+				{/*<Footer />*/}
 			</div>
 		)
 	}
@@ -53,3 +62,6 @@ class PageEmployer extends Component {
 
 
 export default PageEmployer;
+
+
+

@@ -5,18 +5,20 @@ import Connections from '../Connections/Connections';
 import ProfileEmployee from '../ProfileEmployee/ProfileEmployee';
 import Navigator from '../Navigator/Navigator';
 import Footer from '../Footer/Footer';
-import "./PageEmployee.css"
+import "./PageEmployee.css";
+import axios from 'axios';
 
 
 
 class PageEmployee extends Component {
 	state = {
-		pending: ""
+		matches: [],
+		connections: []
 	}
 
 	componentDidMount() {
-		fetch('/api/employees')
-		.then(res => console.log(res))
+		axios('/api/employees')
+		.then(res => this.setState({matches: res.data}))
 	}
 
 	openNav = () => {
@@ -38,15 +40,15 @@ class PageEmployee extends Component {
 
 				<div className="container" id="main" style={{height: "auto", paddingTop: "75px"}}>
 					<div className='row'>
-						<Matches />
+						<Matches data={this.state.matches} modal='#employeeModal'/>
 					</div>
 					<br />
 					<div className="row">
-						<Connections />
+						<Connections data={this.state.matches} modal='#employeeModal'/>
 					</div>
 					<ModalSwipeEmployee />
 				</div>
-				<Footer />
+				{/*<Footer />*/}
 			</div>
 		)
 	}
