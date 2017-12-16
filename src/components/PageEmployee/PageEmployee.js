@@ -48,7 +48,7 @@ class PageEmployee extends Component {
 					</div>
 					<ModalSwipeEmployee />
 				</div>
-				{/*<Footer />*/}
+				<Footer />
 			</div>
 		)
 	}
