@@ -10,6 +10,7 @@ function Matches(props) {
 	  		<h4>Pending Matches</h4>
 		  </div>
 		  <div className="card-block container" style={{height: "500px", overflow: "auto"}}>
+		  	{console.log(props)}
 		  	{props.data.map((card, index) => (
 		  		<Card 	
 		  			key={index} 
