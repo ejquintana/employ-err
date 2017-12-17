@@ -17,7 +17,10 @@ class PageEmployee extends Component {
 	}
 
 	componentDidMount() {
-		axios('/api/employers')
+		axios({
+			method: 'GET',
+			url: '/api/employers',
+			responseType: 'json'})
 		.then(res => this.setState({matches: res.data}))
 	}
 

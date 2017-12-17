@@ -10,7 +10,7 @@ function Connections(props) {
 		  	<h4>Connections</h4>
 		  </div>
 		<div className="card-block container" style={{height: "500px", overflow: "auto"}}>
-		  	{!props.data ? "No Data Yet" : props.data.map((card, index) => (
+		  	{(props.data === "") ? "No Data Yet" : props.data.map((card, index) => (
 		  		<Card 	
 		  			key={index} 
 		  			displayName={card.displayName} 
