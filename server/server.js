@@ -6,7 +6,7 @@ const employees = require('./employees.js');
 const employers = require('./employers.js');
 
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 
 app.get('/api/employees', (req, res) => {
