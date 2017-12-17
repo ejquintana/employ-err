@@ -11,7 +11,7 @@ function Matches(props) {
 		  </div>
 		  <div className="card-block container" style={{height: "500px", overflow: "auto"}}>
 		  	{console.log(props)}
-		  	{(props.data === "") ? "No Data Yet" : props.data.map((card, index) => (
+		  	{(props.data === "" || props.data === null) ? "No Data Yet" : props.data.map((card, index) => (
 		  		<Card 	
 		  			key={index} 
 		  			displayName={card.displayName} 
