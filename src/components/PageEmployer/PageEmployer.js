@@ -13,8 +13,8 @@ import axios from 'axios';
 
 class PageEmployer extends Component {
 	state = {
-		matches: [],
-		connections: []
+		matches: "",
+		connections: ""
 	}
 
 	componentDidMount() {
