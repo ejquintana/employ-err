@@ -13,9 +13,9 @@ class ProfileEmployer extends React.Component{
               <div className="card-body" >
                 <div className="row" style={{justifyContent: 'center', alignItems: 'center',}}>
                   <div className="col-8 col-lg-8 col-md-6" style={{justifyContent: 'center', alignItems: 'center',}}>
-                     <h3 class="color-blue index-1 no-m pt-4" style={{justifyContent: 'center', alignItems: 'center',}}>Kip Dynamite</h3>
+                     <h3 class="color-blue index-1 no-m pt-4">Kip Dynamite</h3>
                      <br/>
-                     <img className="rounded-circle" src={require("../../img/kip.jpg")} style={{height:"250px", width:"250px"}} alt="..."/>
+                     <img className="rounded-circle" src={require("../../img/kip.jpg")} style={{height:"225px", width:"225px",justifyContent: 'center', alignItems: 'center',}} alt="..."/>
                     <br/>
                   </div>
                   <div class="card-block pt-4 text-center">
